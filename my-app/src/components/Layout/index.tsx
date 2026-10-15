@@ -5,10 +5,10 @@ import Rodape from "../Rodape";
 
 export function Layout({ tema }: LayoutProps) {
   return (
-    <>
+    <div className={tema}>
       <Cabecalho />
         <Outlet/>
       <Rodape />
-    </>
+    </div>
   );
 }

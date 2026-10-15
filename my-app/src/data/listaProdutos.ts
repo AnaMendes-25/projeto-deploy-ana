@@ -1,7 +1,7 @@
 import type { TipoProduto } from "../types/types";
 
 
-export const listaProdutos:TipoProduto[]  = [
+export const listaProdutos: (Omit<TipoProduto, "estoque"> & { descricao: string })[] = [
   {
     id: 1,
     nome: "Headset Gamer Sem Fio",

@@ -1,6 +1,3 @@
-import { Outlet } from "react-router";
-import Cabecalho from "./components/Cabecalho";
-import Rodape from "./components/Rodape";
 import { useState } from "react";
 import type { Tema } from "./types/types";
 import { Layout } from "./components/Layout";
@@ -9,7 +6,7 @@ import { Layout } from "./components/Layout";
 
 export default function App() {
 
-  const [tema, setTema] = useState<Tema>('light');
+  const [tema] = useState<Tema>('light');
 
   return (
     <div>
@@ -22,7 +19,7 @@ export default function App() {
 
 // export default function App() {
 
-//   const [tema, setTema] = useState<Tema>('light');
+//   const [tema] = useState<Tema>('light');
 
 //   return (
 //     <div>

@@ -10,6 +10,7 @@ export interface TipoProduto {
 
 export interface TipoProdutoAll {
     produto:TipoProduto;
+    onDelete: (id: string) => void;
 }
 
 export type TipoProdutoJ = {

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Contador } from "../../components/Contador";
 
 type TipoUsuarioGit = {
@@ -29,11 +29,11 @@ export default function Home() {
     //Modificar o título da página;
     document.title = "Home";
 
-    const [usuarios, setUsuarios] = useState<TipoUsuarioGit[]>([]);
+    const [usuarios] = useState<TipoUsuarioGit[]>([]);
 
-    useEffect( ()=>{
+    {/* useEffect( ()=>{
         //Função assíncrona
-        async function loadingData() {
+        {/* async function loadingData() {
             
             try {
                 const response = await fetch("https://api.github.com/users");
@@ -54,7 +54,7 @@ export default function Home() {
         //Executando a função
         // loadingData();
 
-    }, []);
+    }, []); */}
 
     return (
         <main>

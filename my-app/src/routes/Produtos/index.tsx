@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import type { TipoProduto } from "../../types/types";
-import { Link, useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 import ProdutoCard from "../../components/ProdutoCard";
 
 export default function Produtos() {
@@ -62,7 +62,7 @@ export default function Produtos() {
       <h2>Produtos</h2>
       <div className="flex">
         {produtos.map((p) => (
-          <ProdutoCard produto={p}  />
+          <ProdutoCard key={p.id} produto={p} onDelete={handleDelete} />
         ))}
       </div>
 
