@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+@layer base {
+    .container {
+        @apply bg-amber-900 text-white flex flex-col min-h-screen min-w-screen justify-between;
+        & header { @apply bg-amber-400 w-full; }
+        & main { @apply bg-amber-300; }
+        & footer { @apply bg-amber-200; }
+    }
+}
